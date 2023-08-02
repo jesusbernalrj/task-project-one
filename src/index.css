@@ -1,0 +1,210 @@
+
+body{
+    background: url(../img/bg.png) 
+}
+.nav-header{
+    background-color: black;
+    opacity: 0.8;
+}
+.nav-header:hover{
+    background-color: black;
+    opacity: 1;
+}
+.icons-header{
+    color: white;
+    cursor: pointer;
+    
+}
+.icons-header:hover{
+    color: red;
+}
+.main-task{
+    margin-top: 10rem;
+}
+.main-task-main{
+    
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    height: 500px;
+}
+.main-task-text{
+    display: block;
+    white-space: nowrap;
+    width: 19ch;
+    animation: typing 2s steps(19), blink .5s infinite step-end alternate;
+    overflow:hidden;
+    }
+    .main-task-text-two{
+        display: block;
+        white-space: nowrap;
+        width: 15ch;
+        animation: typing 2s steps(15), blink .5s infinite step-end alternate;
+        overflow:hidden;
+        }
+    
+    @keyFrames typing {
+    from { width: 0}
+    }
+    @keyFrames blink {
+     50% { border-color: transparent}
+    }
+.main-task-select{
+    display: block;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    font-weight: 900;
+    width: 100%;
+    height: 10%;
+}
+.main-task-option{
+    font-weight: 900;
+}
+
+.input-name{
+height: 20%;
+}
+
+.formContainer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+  
+  }
+  .formWrapper{
+    background-image: linear-gradient(100deg, #010000, #ffffe0);
+    opacity: 0.9;
+    background-size: cover;
+    padding: 4rem 4rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .formWrapper form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  
+  
+  }
+  
+  .formWrapper input{
+    border-radius: 5px;
+    padding: 7px;
+    width: 25rem;
+    font-size: 1rem;
+   
+    
+  }
+  .formWrapper label{
+      font-size: 1rem;
+  }
+  .formWrapper h1{
+    color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  
+  }
+  .formWrapper h4{
+    color: white;
+    font-size: 1.4rem;
+  
+    }
+  .form-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .btn-arrow{
+   font-size: 3.5rem;
+  }
+
+  #side_nav{
+    background-color: #010000;
+    opacity: 0.8;
+    min-width: 250px;
+    max-width: 250px;
+  }
+  .content{
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  hr.h-color{
+    background-color: #ffffe0;
+  }
+  .task-review{
+    display: block;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    font-weight: 900;
+    width: 100%;
+    height: 10%;
+    margin-top: 2rem;
+    
+  }
+  .book-container {
+    perspective: 800px;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  
+  .header-editar{
+    margin-top: 1rem;
+  }
+  .header-task{
+    margin-top: 9rem;
+  }
+  .ReactModalPortal > div{
+    opacity: 0;
+  }
+  
+  .ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity .2s ease-in-out;
+    z-index: 999;
+  }
+  
+  .modal-fondo {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+  }
+  
+  .ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+  }
+  
+  .ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+  }
+  
+  .modal {
+    background: white;
+    border-radius: 5px;
+    color: rgb(51, 51, 51);
+    display: inline;
+    max-height: 520px;
+    max-width: 600px;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+  }
